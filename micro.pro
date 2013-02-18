@@ -1,4 +1,4 @@
-update=vie 15 feb 2013 19:15:16 ART
+update=lun 18 feb 2013 15:39:52 ART
 last_client=pcbnew
 [cvpcb]
 version=1
@@ -117,3 +117,6 @@ LibName13=librerias/mod_battery_holders/w_battery_holders
 LibName14=librerias/mod_conn_misc/w_conn_misc
 LibName15=librerias/mod_misc_comp/w_misc_comp
 LibName16=librerias/mod_to/w_to
+LibName17=librerias/mod_conn_kk100/w_conn_kk100
+LibName18=librerias/mod_conn_screw/w_conn_screw
+LibName19=librerias/mod_capacitors/w_capacitors

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date dom 17 feb 2013 13:57:08 ART
+EESchema Schematic File Version 2  date lun 18 feb 2013 15:53:11 ART
 LIBS:w_connectors
 LIBS:micro-cache
 LIBS:74xx
@@ -51,7 +51,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "uControlador"
-Date "17 feb 2013"
+Date "18 feb 2013"
 Rev "1.0"
 Comp "Seminario de Sistemas Embebidos - FIUBA"
 Comment1 ""
@@ -315,7 +315,7 @@ L CP1 C3
 U 1 1 511418F7
 P 4050 3400
 F 0 "C3" H 4100 3500 50  0000 L CNN
-F 1 "10u" H 4100 3300 50  0000 L CNN
+F 1 "0.1u" H 4100 3300 50  0000 L CNN
 	1    4050 3400
 	1    0    0    -1  
 $EndComp
@@ -333,7 +333,7 @@ L CP1 C1
 U 1 1 511418F2
 P 1750 3400
 F 0 "C1" H 1800 3500 50  0000 L CNN
-F 1 "10u" H 1800 3300 50  0000 L CNN
+F 1 "0.33u" H 1800 3300 50  0000 L CNN
 	1    1750 3400
 	1    0    0    -1  
 $EndComp

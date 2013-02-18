@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = lun 18 feb 2013 11:23:56 ART
+Cmp-Mod V01 Genere par PcbNew le lun 18 feb 2013 15:47:39 ART
 
 BeginCmp
 TimeStamp = /5112DD1E;
@@ -11,14 +11,14 @@ BeginCmp
 TimeStamp = /511418F6;
 Reference = C2;
 ValeurCmp = 100n;
-IdModule  = C-10,12x4.5;
+IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /511418F7;
 Reference = C3;
 ValeurCmp = 10u;
-IdModule  = C-10,12x4.5;
+IdModule  = cnp_3mm_disc;
 EndCmp
 
 BeginCmp
@@ -67,14 +67,14 @@ BeginCmp
 TimeStamp = /5112C657;
 Reference = P1;
 ValeurCmp = CONN_4;
-IdModule  = bornier4;
+IdModule  = mors_4p;
 EndCmp
 
 BeginCmp
 TimeStamp = /5112C637;
 Reference = P2;
 ValeurCmp = CONN_4;
-IdModule  = bornier4;
+IdModule  = mors_4p;
 EndCmp
 
 BeginCmp

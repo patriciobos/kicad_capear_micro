@@ -1,18 +1,14 @@
-# EESchema Netlist Version 1.1 created  lun 18 feb 2013 11:56:45 ART
+# EESchema Netlist Version 1.1 created  lun 18 feb 2013 15:41:29 ART
 (
- ( /512229E0 $noname  D4 DIODE {Lib=DIODE}
-  (    1 N-000047 )
-  (    2 3,3v )
- )
  ( /511E986B $noname  P3 CONN_2 {Lib=CONN_2}
   (    1 GND )
   (    2 +12V )
  )
  ( /511428C1 LPCXpresso_boards-LPCXPRESSO_LPC1769  LPC1 LPCXPRESSO_LPC1769 {Lib=LPCXPRESSO_LPC1769}
   (    1 GND )
-  (    2 ? )
-  (    3 N-000059 )
-  (    4 N-000056 )
+  (    2 5v )
+  (    3 N-000056 )
+  (    4 N-000054 )
   (    5 ? )
   (    6 ? )
   (    7 ? )
@@ -40,24 +36,24 @@
   (   29 ? )
   (   30 ? )
   (   31 ? )
-  (   32 N-000055 )
-  (   33 N-000053 )
-  (   34 N-000052 )
-  (   35 N-000051 )
+  (   32 N-000053 )
+  (   33 N-000052 )
+  (   34 N-000051 )
+  (   35 N-000050 )
   (   36 ? )
   (   37 ? )
   (   38 ? )
   (   39 ? )
-  (   40 led2 )
-  (   41 led1 )
-  (   42 N-000037 )
-  (   43 N-000038 )
-  (   44 N-000039 )
-  (   45 N-000040 )
-  (   46 N-000041 )
-  (   47 N-000042 )
-  (   48 N-000043 )
-  (   49 N-000044 )
+  (   40 led1 )
+  (   41 led2 )
+  (   42 N-000039 )
+  (   43 N-000040 )
+  (   44 N-000041 )
+  (   45 N-000042 )
+  (   46 N-000043 )
+  (   47 N-000044 )
+  (   48 N-000045 )
+  (   49 N-000046 )
   (   50 ? )
   (   51 ? )
   (   52 ? )
@@ -84,41 +80,50 @@
   (   73 ? )
  )
  ( /5114191E $noname  R2 180 {Lib=R}
-  (    1 N-000016 )
+  (    1 N-000013 )
   (    2 GND )
  )
- ( /51141917 $noname  R1 680 {Lib=R}
-  (    1 N-000046 )
+ ( /51141917 $noname  R1 270 {Lib=R}
+  (    1 N-000014 )
   (    2 GND )
  )
  ( /51141908 $noname  D3 LED {Lib=LED}
-  (    1 N-000047 )
-  (    2 N-000016 )
+  (    1 3,3v )
+  (    2 N-000013 )
  )
  ( /51141903 $noname  D1 LED {Lib=LED}
-  (    1 +12V )
-  (    2 N-000046 )
+  (    1 5v )
+  (    2 N-000014 )
  )
- ( /511418F7 $noname  C3 10u {Lib=CP1}
-  (    1 N-000047 )
+ ( /511418F7 $noname  C3 0.1u {Lib=CP1}
+  (    1 3,3v )
   (    2 GND )
  )
  ( /511418F6 $noname  C2 100n {Lib=CP1}
+  (    1 5v )
+  (    2 GND )
+ )
+ ( /511418F2 $noname  C1 0.33u {Lib=CP1}
   (    1 +12V )
   (    2 GND )
  )
  ( /511418E7 $noname  U2 7833 {Lib=7805}
   (  GND GND )
+  (   VI 5v )
+  (   VO 3,3v )
+ )
+ ( /511418E4 $noname  U1 7805 {Lib=7805}
+  (  GND GND )
   (   VI +12V )
-  (   VO N-000047 )
+  (   VO 5v )
  )
  ( /5114052C $noname  J1 RJ45-MAG {Lib=RJ45-MAG}
-  (    1 N-000051 )
+  (    1 N-000050 )
   (    2 3,3v )
-  (    3 N-000052 )
-  (    4 N-000053 )
+  (    3 N-000051 )
+  (    4 N-000052 )
   (    5 3,3v )
-  (    6 N-000055 )
+  (    6 N-000053 )
   (    7 ? )
   (    8 GND )
   (    9 GND )
@@ -129,40 +134,36 @@
   (   14 GND )
  )
  ( /5112DE8D $noname  D2 LED {Lib=LED}
-  (    1 N-000036 )
+  (    1 N-000038 )
   (    2 GND )
  )
- ( /5112DDEC $noname  R3 180 {Lib=R}
-  (    1 3,3v )
-  (    2 N-000056 )
+ ( /5112DDEC $noname  R3 R {Lib=R}
+  (    1 5v )
+  (    2 N-000054 )
  )
  ( /5112DDA5 $noname  SW1 SW_PUSH {Lib=SW_PUSH}
-  (    1 N-000036 )
-  (    2 N-000056 )
+  (    1 N-000038 )
+  (    2 N-000054 )
  )
  ( /5112DD1E $noname  BT1 BATTERY {Lib=BATTERY}
   (    1 GND )
-  (    2 N-000059 )
+  (    2 N-000056 )
  )
  ( /5112C657 $noname  P1 CONN_4 {Lib=CONN_4}
-  (    1 N-000037 )
-  (    2 N-000038 )
-  (    3 N-000039 )
-  (    4 N-000040 )
+  (    1 N-000039 )
+  (    2 N-000040 )
+  (    3 N-000041 )
+  (    4 N-000042 )
  )
  ( /5112C637 $noname  P2 CONN_4 {Lib=CONN_4}
-  (    1 N-000041 )
-  (    2 N-000042 )
-  (    3 N-000043 )
-  (    4 N-000044 )
+  (    1 N-000043 )
+  (    2 N-000044 )
+  (    3 N-000045 )
+  (    4 N-000046 )
  )
 )
 *
 { Allowed footprints by component:
-$component D4
- D?
- S*
-$endlist
 $component R2
  R?
  SM0603
@@ -201,6 +202,10 @@ $component C2
  CP*
  SM*
 $endlist
+$component C1
+ CP*
+ SM*
+$endlist
 $component J1
  RJ45_Mag
 $endlist
@@ -222,95 +227,99 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 15 "3,3v" "3,3v"
- R3 1
- D4 2
- J1 2
- LPC1 28
- J1 5
-Net 16 "" ""
+Net 13 "" ""
  D3 2
  R2 1
-Net 36 "" ""
- D2 1
- SW1 1
-Net 37 "" ""
- P1 1
- LPC1 42
-Net 38 "" ""
- P1 2
- LPC1 43
-Net 39 "" ""
- LPC1 44
- P1 3
-Net 40 "" ""
- LPC1 45
- P1 4
-Net 41 "" ""
- P2 1
- LPC1 46
-Net 42 "" ""
- P2 2
- LPC1 47
-Net 43 "" ""
- P2 3
- LPC1 48
-Net 44 "" ""
- P2 4
- LPC1 49
-Net 46 "" ""
- D1 2
+Net 14 "" ""
  R1 1
-Net 47 "" ""
- U2 VO
+ D1 2
+Net 15 "3,3v" "3,3v"
+ J1 2
+ J1 5
  C3 1
- D4 1
  D3 1
-Net 48 "GND" "GND"
- P3 1
- LPC1 1
- C3 2
- C2 2
+ U2 VO
+ LPC1 28
+Net 26 "GND" "GND"
+ C1 2
  U2 GND
+ U1 GND
+ J1 12
+ J1 10
+ J1 9
+ J1 8
+ LPC1 1
+ P3 1
+ C2 2
+ R2 2
+ R1 2
+ LPC1 54
+ C3 2
  D2 2
  BT1 1
  J1 14
- J1 8
- J1 9
- R2 2
- R1 2
- J1 12
- LPC1 54
- J1 10
-Net 49 "+12V" "+12V"
+Net 38 "" ""
+ D2 1
+ SW1 1
+Net 39 "" ""
+ P1 1
+ LPC1 42
+Net 40 "" ""
+ P1 2
+ LPC1 43
+Net 41 "" ""
+ P1 3
+ LPC1 44
+Net 42 "" ""
+ LPC1 45
+ P1 4
+Net 43 "" ""
+ P2 1
+ LPC1 46
+Net 44 "" ""
+ LPC1 47
+ P2 2
+Net 45 "" ""
+ LPC1 48
+ P2 3
+Net 46 "" ""
+ P2 4
+ LPC1 49
+Net 48 "5v" "5v"
  D1 1
- U2 VI
  C2 1
- P3 2
-Net 51 "" ""
- LPC1 35
+ U2 VI
+ U1 VO
+ LPC1 2
+ R3 1
+Net 50 "" ""
  J1 1
-Net 52 "" ""
+ LPC1 35
+Net 51 "" ""
  J1 3
  LPC1 34
-Net 53 "" ""
+Net 52 "" ""
  LPC1 33
  J1 4
-Net 54 "led1" "led1"
- J1 13
- LPC1 41
-Net 55 "" ""
- J1 6
+Net 53 "" ""
  LPC1 32
-Net 56 "" ""
- R3 2
+ J1 6
+Net 54 "" ""
  LPC1 4
  SW1 2
-Net 59 "" ""
+ R3 2
+Net 55 "led1" "led1"
+ J1 13
+ LPC1 40
+Net 56 "" ""
  BT1 2
  LPC1 3
-Net 68 "led2" "led2"
+Net 65 "+12V" "+12V"
+ P3 2
+ U1 VI
+ C1 1
+Net 72 "led2" "led2"
+ LPC1 41
  J1 11
- LPC1 40
 }
 #End
