@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date lun 18 feb 2013 17:15:36 ART
+PCBNEW-BOARD Version 1 date lun 18 feb 2013 17:30:00 ART
 
 # Created by Pcbnew(2011-05-25)-stable
 
@@ -20,11 +20,11 @@ $EndGENERAL
 
 $SHEETDESCR
 Sheet A4 11700 8267
-Title ""
+Title "Capear Modulo de Control"
 Date "18 feb 2013"
-Rev ""
-Comp ""
-Comment1 ""
+Rev "1.0"
+Comp "FiUBA"
+Comment1 "Seminario de Sistemas Embebidos"
 Comment2 ""
 Comment3 ""
 Comment4 ""

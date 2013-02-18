@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date lun 18 feb 2013 15:53:05 ART
+PCBNEW-BOARD Version 1 date lun 18 feb 2013 17:15:36 ART
 
 # Created by Pcbnew(2011-05-25)-stable
 
@@ -9,8 +9,8 @@ Ly 1FFF8001
 EnabledLayers 1FFF8001
 Links 53
 NoConn 3
-Di 22898 8782 83314 59671
-Ndraw 6
+Di 22898 18659 83314 59671
+Ndraw 5
 Ntrack 115
 Nzone 0
 BoardThickness 630
@@ -1998,7 +1998,7 @@ Ne 4 "N-000016"
 Po 500 0
 $EndPAD
 $SHAPE3D
-Na "discret/leds/led5_vertical_verde.wrl"
+Na "librerias/mod_indicators/indicators/led_5mm_yellow.wrl"
 Sc 1.000000 1.000000 1.000000
 Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
@@ -2039,7 +2039,7 @@ Ne 3 "GND"
 Po 500 0
 $EndPAD
 $SHAPE3D
-Na "discret/leds/led5_vertical_verde.wrl"
+Na "librerias/mod_indicators/indicators/led_5mm_red.wrl"
 Sc 1.000000 1.000000 1.000000
 Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
@@ -2080,7 +2080,7 @@ Ne 14 "N-000046"
 Po 500 0
 $EndPAD
 $SHAPE3D
-Na "discret/leds/led5_vertical_verde.wrl"
+Na "librerias/mod_indicators/indicators/led_5mm_green.wrl"
 Sc 1.000000 1.000000 1.000000
 Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
@@ -2625,10 +2625,6 @@ Te "Capear rev 1.0 - control"
 Po 77441 49252 600 800 120 2700
 De 0 0 0 Normal
 $EndTEXTPCB
-$DRAWSEGMENT
-Po 0 37205 8858 37205 9055 150
-De 28 0 900 0 0
-$EndDRAWSEGMENT
 $DRAWSEGMENT
 Po 0 39370 59055 78740 59055 150
 De 28 0 900 0 0
