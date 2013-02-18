@@ -1,17 +1,10 @@
-Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = dom 17 feb 2013 12:24:48 ART
+Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = lun 18 feb 2013 11:23:56 ART
 
 BeginCmp
 TimeStamp = /5112DD1E;
 Reference = BT1;
 ValeurCmp = BATTERY;
-IdModule  = keystone_301;
-EndCmp
-
-BeginCmp
-TimeStamp = /511418F2;
-Reference = C1;
-ValeurCmp = 10u;
-IdModule  = C-10,12x4.5;
+IdModule  = keystone_107;
 EndCmp
 
 BeginCmp
@@ -47,6 +40,13 @@ TimeStamp = /51141908;
 Reference = D3;
 ValeurCmp = LED;
 IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /512229E0;
+Reference = D4;
+ValeurCmp = DIODE;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
@@ -87,7 +87,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51141917;
 Reference = R1;
-ValeurCmp = 270;
+ValeurCmp = 680;
 IdModule  = R5;
 EndCmp
 
@@ -101,7 +101,7 @@ EndCmp
 BeginCmp
 TimeStamp = /5112DDEC;
 Reference = R3;
-ValeurCmp = R;
+ValeurCmp = 180;
 IdModule  = R5;
 EndCmp
 
@@ -110,13 +110,6 @@ TimeStamp = /5112DDA5;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
 IdModule  = PCB_PUSH;
-EndCmp
-
-BeginCmp
-TimeStamp = /511418E4;
-Reference = U1;
-ValeurCmp = 7805;
-IdModule  = to220_7805;
 EndCmp
 
 BeginCmp
