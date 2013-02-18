@@ -1,0 +1,129 @@
+Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = dom 17 feb 2013 12:24:48 ART
+
+BeginCmp
+TimeStamp = /5112DD1E;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = keystone_301;
+EndCmp
+
+BeginCmp
+TimeStamp = /511418F2;
+Reference = C1;
+ValeurCmp = 10u;
+IdModule  = C-10,12x4.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /511418F6;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = C-10,12x4.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /511418F7;
+Reference = C3;
+ValeurCmp = 10u;
+IdModule  = C-10,12x4.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /51141903;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5112DE8D;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /51141908;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5114052C;
+Reference = J1;
+ValeurCmp = RJ45-MAG;
+IdModule  = RJ45-MAG;
+EndCmp
+
+BeginCmp
+TimeStamp = /511428C1;
+Reference = LPC1;
+ValeurCmp = LPCXPRESSO_LPC1769;
+IdModule  = LPCXpresso_boards-LPCXPRESSO_LPC1769;
+EndCmp
+
+BeginCmp
+TimeStamp = /5112C657;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = bornier4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5112C637;
+Reference = P2;
+ValeurCmp = CONN_4;
+IdModule  = bornier4;
+EndCmp
+
+BeginCmp
+TimeStamp = /511E986B;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = dc_socket;
+EndCmp
+
+BeginCmp
+TimeStamp = /51141917;
+Reference = R1;
+ValeurCmp = 270;
+IdModule  = R5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5114191E;
+Reference = R2;
+ValeurCmp = 180;
+IdModule  = R5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5112DDEC;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = R5;
+EndCmp
+
+BeginCmp
+TimeStamp = /5112DDA5;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = PCB_PUSH;
+EndCmp
+
+BeginCmp
+TimeStamp = /511418E4;
+Reference = U1;
+ValeurCmp = 7805;
+IdModule  = to220_7805;
+EndCmp
+
+BeginCmp
+TimeStamp = /511418E7;
+Reference = U2;
+ValeurCmp = 7833;
+IdModule  = to220_7805;
+EndCmp
+
+EndListe
