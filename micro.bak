@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date vie 22 feb 2013 16:46:39 ART
+EESchema Schematic File Version 2  date vie 22 feb 2013 18:19:36 ART
 LIBS:w_connectors
 LIBS:micro-cache
 LIBS:74xx
@@ -60,6 +60,8 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
+	1750 4200 1750 4450
+Wire Wire Line
 	10500 3200 10500 3350
 Connection ~ 10350 1350
 Wire Wire Line
@@ -75,18 +77,11 @@ Wire Wire Line
 Wire Wire Line
 	9500 1350 8300 1350
 Wire Wire Line
-	3150 3200 2650 3200
-Wire Wire Line
-	1400 3200 1850 3200
-Wire Wire Line
-	3050 3200 3050 3050
-Wire Wire Line
 	1750 3200 1750 3000
 Connection ~ 1750 3200
 Connection ~ 4050 4200
 Wire Wire Line
 	4050 3600 4050 4200
-Connection ~ 2250 4200
 Wire Wire Line
 	3050 3600 3050 3700
 Wire Wire Line
@@ -106,11 +101,6 @@ Wire Wire Line
 	5600 1550 3300 1550
 Wire Wire Line
 	3300 2150 3300 2350
-Wire Wire Line
-	5250 800  5250 1450
-Connection ~ 5050 800 
-Wire Wire Line
-	5250 800  5050 800 
 Wire Wire Line
 	5600 1350 5600 1100
 Wire Wire Line
@@ -160,10 +150,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 3450 8850 3450
 Wire Wire Line
-	5250 1450 5600 1450
-Wire Wire Line
-	5050 700  5050 950 
-Wire Wire Line
 	5050 1650 5600 1650
 Wire Wire Line
 	5050 1850 5050 1450
@@ -182,12 +168,8 @@ Wire Wire Line
 Connection ~ 10500 3350
 Wire Wire Line
 	10700 1250 10700 1550
-Wire Wire Line
-	1750 3600 1750 4450
 Connection ~ 3050 3200
 Connection ~ 4050 3200
-Wire Wire Line
-	2750 3200 2750 3000
 Wire Wire Line
 	4350 3600 4350 3700
 Connection ~ 1750 4200
@@ -202,8 +184,6 @@ Wire Wire Line
 	1400 4200 4350 4200
 Wire Wire Line
 	4350 3100 4350 3200
-Wire Wire Line
-	2250 3500 2250 4200
 Wire Wire Line
 	3550 3500 3550 4200
 Wire Wire Line
@@ -232,6 +212,17 @@ Wire Wire Line
 	10500 750  10500 1550
 Wire Wire Line
 	10500 2650 10500 2700
+Wire Wire Line
+	1400 3200 3150 3200
+$Comp
+L +3.3V #PWR?
+U 1 1 5127E085
+P 5050 950
+F 0 "#PWR?" H 5050 910 30  0001 C CNN
+F 1 "+3.3V" H 5050 1060 30  0000 C CNN
+	1    5050 950 
+	1    0    0    -1  
+$EndComp
 $Comp
 L R R4
 U 1 1 5127CAB9
@@ -268,12 +259,8 @@ F 1 "100n" H 9300 2300 50  0000 L CNN
 	1    9250 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 800  0    60   Input ~ 0
-5v
 Text GLabel 9500 900  0    60   Input ~ 0
 3,3v
-Text GLabel 3050 3050 1    60   Input ~ 0
-5v
 Text GLabel 4350 3100 1    60   Input ~ 0
 3,3v
 $Comp
@@ -320,15 +307,6 @@ P 4050 3000
 F 0 "#PWR5" H 4050 2960 30  0001 C CNN
 F 1 "+3.3V" H 4050 3110 30  0000 C CNN
 	1    4050 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR3
-U 1 1 51141931
-P 2750 3000
-F 0 "#PWR3" H 2750 3090 20  0001 C CNN
-F 1 "+5V" H 2750 3090 30  0000 C CNN
-	1    2750 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -386,30 +364,12 @@ F 1 "100n" H 2800 3300 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C1
-U 1 1 511418F2
-P 1750 3400
-F 0 "C1" H 1800 3500 50  0000 L CNN
-F 1 "0.33u" H 1800 3300 50  0000 L CNN
-	1    1750 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L 7805 U2
 U 1 1 511418E7
 P 3550 3250
 F 0 "U2" H 3700 3054 60  0000 C CNN
 F 1 "7833" H 3550 3450 60  0000 C CNN
 	1    3550 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L 7805 U1
-U 1 1 511418E4
-P 2250 3250
-F 0 "U1" H 2400 3054 60  0000 C CNN
-F 1 "7805" H 2250 3450 60  0000 C CNN
-	1    2250 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -452,7 +412,7 @@ L R R3
 U 1 1 5112DDEC
 P 5050 1200
 F 0 "R3" V 5130 1200 50  0000 C CNN
-F 1 "R" V 5050 1200 50  0000 C CNN
+F 1 "180" V 5050 1200 50  0000 C CNN
 	1    5050 1200
 	1    0    0    -1  
 $EndComp
@@ -482,15 +442,6 @@ F 0 "BT1" H 3300 2050 50  0000 C CNN
 F 1 "BATTERY" H 3300 1660 50  0000 C CNN
 	1    3300 1850
 	0    -1   -1   0   
-$EndComp
-$Comp
-L +5V #PWR6
-U 1 1 5112DCB1
-P 5050 700
-F 0 "#PWR6" H 5050 790 20  0001 C CNN
-F 1 "+5V" H 5050 790 30  0000 C CNN
-	1    5050 700 
-	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR7
