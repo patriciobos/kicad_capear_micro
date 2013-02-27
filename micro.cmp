@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = vie 22 feb 2013 18:36:22 ART
+Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = mar 26 feb 2013 21:16:28 ART
 
 BeginCmp
 TimeStamp = /5112DD1E;
@@ -10,14 +10,14 @@ EndCmp
 BeginCmp
 TimeStamp = /511418F6;
 Reference = C2;
-ValeurCmp = 100n;
-IdModule  = cnp_13x4mm;
+ValeurCmp = 0.1u;
+IdModule  = cnp_3mm_disc;
 EndCmp
 
 BeginCmp
 TimeStamp = /511418F7;
 Reference = C3;
-ValeurCmp = 0.1u;
+ValeurCmp = 1u;
 IdModule  = cnp_3mm_disc;
 EndCmp
 
@@ -54,6 +54,13 @@ TimeStamp = /51141908;
 Reference = D3;
 ValeurCmp = LED;
 IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /512D49B5;
+Reference = D4;
+ValeurCmp = DIODE;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
@@ -127,6 +134,20 @@ IdModule  = R5;
 EndCmp
 
 BeginCmp
+TimeStamp = /512BE17B;
+Reference = R7;
+ValeurCmp = 240;
+IdModule  = R5;
+EndCmp
+
+BeginCmp
+TimeStamp = /512D20F8;
+Reference = RV1;
+ValeurCmp = POT;
+IdModule  = trimmer_ecp_ca9-h2,5;
+EndCmp
+
+BeginCmp
 TimeStamp = /5112DDA5;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
@@ -134,10 +155,10 @@ IdModule  = PCB_PUSH;
 EndCmp
 
 BeginCmp
-TimeStamp = /511418E7;
-Reference = U2;
-ValeurCmp = 7833;
-IdModule  = to220_7805;
+TimeStamp = /512D4650;
+Reference = U1;
+ValeurCmp = LM317;
+IdModule  = TO220V-123;
 EndCmp
 
 EndListe

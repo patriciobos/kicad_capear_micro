@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date vie 22 feb 2013 18:45:20 ART
+EESchema Schematic File Version 2  date mié 27 feb 2013 01:26:58 ART
 LIBS:w_connectors
 LIBS:micro-cache
 LIBS:74xx
@@ -51,7 +51,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "uControlador"
-Date "22 feb 2013"
+Date "27 feb 2013"
 Rev "1.0"
 Comp "Seminario de Sistemas Embebidos - FIUBA"
 Comment1 ""
@@ -59,20 +59,39 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 10500 1300
+Wire Wire Line
+	10800 1300 10350 1300
+Wire Wire Line
+	10800 1300 10800 1550
+Wire Wire Line
+	10500 2650 10500 3350
+Wire Wire Line
+	4850 3700 4850 3850
+Wire Wire Line
+	4850 2850 4850 3200
+Wire Wire Line
+	4850 3200 4750 3200
+Connection ~ 2750 3200
+Wire Wire Line
+	3000 3200 1400 3200
+Wire Wire Line
+	4350 3200 3800 3200
+Wire Wire Line
+	3550 4050 3800 4050
+Wire Wire Line
+	3800 4050 3800 3800
+Connection ~ 1750 4300
+Wire Wire Line
+	1750 4450 1750 4200
+Wire Wire Line
+	2750 4300 2750 3600
+Wire Wire Line
+	3800 3200 3800 3300
 Wire Wire Line
 	9950 1850 9250 1850
 Wire Wire Line
 	9250 1850 9250 2200
-Wire Wire Line
-	1400 3200 3150 3200
-Wire Wire Line
-	10500 2650 10500 2700
-Wire Wire Line
-	10500 1550 10500 750 
-Wire Wire Line
-	10500 750  10350 750 
-Wire Wire Line
-	10350 750  10350 800 
 Connection ~ 9600 3350
 Wire Wire Line
 	9450 3350 10800 3350
@@ -89,26 +108,7 @@ Wire Wire Line
 	9600 2350 9600 2150
 Wire Wire Line
 	9950 2150 9500 2150
-Wire Wire Line
-	3950 3200 4350 3200
-Wire Wire Line
-	3550 3500 3550 4200
-Wire Wire Line
-	4350 3200 4350 3100
-Wire Wire Line
-	4350 4200 1400 4200
-Wire Wire Line
-	1400 4200 1400 3400
-Connection ~ 2750 4200
-Wire Wire Line
-	2750 3600 2750 4200
-Connection ~ 3550 4200
-Connection ~ 3050 4200
-Connection ~ 1750 4200
-Wire Wire Line
-	4350 3600 4350 3700
 Connection ~ 4050 3200
-Connection ~ 3050 3200
 Wire Wire Line
 	10700 1250 10700 1550
 Connection ~ 10500 3350
@@ -189,30 +189,83 @@ Wire Wire Line
 Wire Wire Line
 	8450 2650 8300 2650
 Wire Wire Line
-	10800 1550 10800 1350
-Connection ~ 2750 3200
-Wire Wire Line
-	4050 3200 4050 3000
-Wire Wire Line
-	3050 3600 3050 3700
-Wire Wire Line
-	4050 3600 4050 4200
-Connection ~ 4050 4200
-Connection ~ 1750 3200
-Wire Wire Line
 	1750 3200 1750 3000
-Wire Wire Line
-	9500 1350 8300 1350
 Connection ~ 9500 1850
 Wire Wire Line
 	10350 1300 10350 1500
 Wire Wire Line
-	10800 1350 10350 1350
-Connection ~ 10350 1350
+	1750 3700 1750 3600
 Wire Wire Line
-	10500 3200 10500 3350
+	4050 4300 4050 3600
+Connection ~ 4050 4300
+Connection ~ 2750 4300
 Wire Wire Line
-	1750 4200 1750 4450
+	1400 3400 1400 4300
+Connection ~ 3400 4300
+Wire Wire Line
+	3800 3800 3400 3800
+Wire Wire Line
+	3400 3800 3400 3700
+Connection ~ 1750 3200
+Wire Wire Line
+	4850 4250 4850 4300
+Wire Wire Line
+	4850 4300 1400 4300
+Wire Wire Line
+	9500 1350 8300 1350
+Wire Wire Line
+	10500 1300 10500 1550
+Text GLabel 3400 3700 0    60   Input ~ 0
+ADJ
+Text GLabel 4050 3200 1    60   Input ~ 0
+OUT
+Text GLabel 2750 3200 1    60   Input ~ 0
+IN
+$Comp
+L LED D1
+U 1 1 51141903
+P 1750 3400
+F 0 "D1" H 1750 3500 50  0000 C CNN
+F 1 "LED" H 1750 3300 50  0000 C CNN
+	1    1750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D4
+U 1 1 512D49B5
+P 4550 3200
+F 0 "D4" H 4550 3300 40  0000 C CNN
+F 1 "DIODE" H 4550 3100 40  0000 C CNN
+	1    4550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM317 U1
+U 1 1 512D4650
+P 3400 3350
+F 0 "U1" H 3400 3650 60  0000 C CNN
+F 1 "LM317" H 3450 3100 60  0000 L CNN
+	1    3400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 512D20F8
+P 3400 4050
+F 0 "RV1" H 3400 3950 50  0000 C CNN
+F 1 "POT" H 3400 4050 50  0000 C CNN
+	1    3400 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 512BE17B
+P 3800 3550
+F 0 "R7" V 3880 3550 50  0000 C CNN
+F 1 "240" V 3800 3550 50  0000 C CNN
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
 $Comp
 L +3.3V #PWR01
 U 1 1 5127E085
@@ -225,19 +278,19 @@ $EndComp
 $Comp
 L R R4
 U 1 1 5127CAB9
-P 10350 1050
-F 0 "R4" V 10350 1100 50  0000 C CNN
-F 1 "270" V 10350 1050 50  0000 C CNN
-	1    10350 1050
+P 10700 1000
+F 0 "R4" V 10700 1050 50  0000 C CNN
+F 1 "270" V 10700 1000 50  0000 C CNN
+	1    10700 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R5
 U 1 1 5127CAA9
-P 10500 2950
-F 0 "R5" V 10580 2950 50  0000 C CNN
-F 1 "270" V 10500 2950 50  0000 C CNN
-	1    10500 2950
+P 10700 3000
+F 0 "R5" V 10780 3000 50  0000 C CNN
+F 1 "270" V 10700 3000 50  0000 C CNN
+	1    10700 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -258,10 +311,6 @@ F 1 "100n" H 9300 2300 50  0000 L CNN
 	1    9250 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 9500 900  0    60   Input ~ 0
-3,3v
-Text GLabel 4350 3100 1    60   Input ~ 0
-3,3v
 $Comp
 L +12V #PWR02
 U 1 1 511E992A
@@ -302,46 +351,37 @@ $EndComp
 $Comp
 L +3.3V #PWR04
 U 1 1 511419F8
-P 4050 3000
-F 0 "#PWR04" H 4050 2960 30  0001 C CNN
-F 1 "+3.3V" H 4050 3110 30  0000 C CNN
-	1    4050 3000
+P 4850 2850
+F 0 "#PWR04" H 4850 2810 30  0001 C CNN
+F 1 "+3.3V" H 4850 2960 30  0000 C CNN
+	1    4850 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R2
 U 1 1 5114191E
-P 4350 3950
-F 0 "R2" V 4430 3950 50  0000 C CNN
-F 1 "180" V 4350 3950 50  0000 C CNN
-	1    4350 3950
+P 4850 3450
+F 0 "R2" V 4930 3450 50  0000 C CNN
+F 1 "180" V 4850 3450 50  0000 C CNN
+	1    4850 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R1
 U 1 1 51141917
-P 3050 3950
-F 0 "R1" V 3130 3950 50  0000 C CNN
-F 1 "270" V 3050 3950 50  0000 C CNN
-	1    3050 3950
+P 1750 3950
+F 0 "R1" V 1830 3950 50  0000 C CNN
+F 1 "270" V 1750 3950 50  0000 C CNN
+	1    1750 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED D3
 U 1 1 51141908
-P 4350 3400
-F 0 "D3" H 4350 3500 50  0000 C CNN
-F 1 "LED" H 4350 3300 50  0000 C CNN
-	1    4350 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L LED D1
-U 1 1 51141903
-P 3050 3400
-F 0 "D1" H 3050 3500 50  0000 C CNN
-F 1 "LED" H 3050 3300 50  0000 C CNN
-	1    3050 3400
+P 4850 4050
+F 0 "D3" H 4850 4150 50  0000 C CNN
+F 1 "LED" H 4850 3950 50  0000 C CNN
+	1    4850 4050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -349,7 +389,7 @@ L CP1 C3
 U 1 1 511418F7
 P 4050 3400
 F 0 "C3" H 4100 3500 50  0000 L CNN
-F 1 "0.1u" H 4100 3300 50  0000 L CNN
+F 1 "1u" H 4100 3300 50  0000 L CNN
 	1    4050 3400
 	1    0    0    -1  
 $EndComp
@@ -358,17 +398,8 @@ L CP1 C2
 U 1 1 511418F6
 P 2750 3400
 F 0 "C2" H 2800 3500 50  0000 L CNN
-F 1 "100n" H 2800 3300 50  0000 L CNN
+F 1 "0.1u" H 2800 3300 50  0000 L CNN
 	1    2750 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 7805 U2
-U 1 1 511418E7
-P 3550 3250
-F 0 "U2" H 3700 3054 60  0000 C CNN
-F 1 "7833" H 3550 3450 60  0000 C CNN
-	1    3550 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -380,13 +411,13 @@ F 1 "GND" H 10350 1430 30  0001 C CNN
 	1    10350 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8450 2650 2    60   Input ~ 0
-led2
-Text GLabel 10700 1250 1    60   Input ~ 0
-led2
 Text GLabel 8450 2550 2    60   Input ~ 0
+led2
+Text GLabel 10700 750  1    60   Input ~ 0
+led2
+Text GLabel 8450 2650 2    60   Input ~ 0
 led1
-Text GLabel 10700 2750 3    60   Input ~ 0
+Text GLabel 10700 3250 3    60   Input ~ 0
 led1
 $Comp
 L RJ45-MAG J1
